@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spots</title>
+</head>
+
+<body>
+    <div class="nvbar">
+        <div class="logo">
+            <br>
+            <img src="images/Lapul.png">
+        </div>
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="spots.html" class="home-link">Attractions</a></li>
+            <li><a href="brief.html">Brief History</a></li>
+            <li><a href="contactAndMap.html">Map and Contact</a></li>
+        </ul>
+        <a href="brief.html" class="action_btn">Next Page</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="dropdown_menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="spots.html" class="home-link">Attractions</a></li>
+        <li><a href="brief.html">Brief History</a></li>
+        <li><a href="contactAndMap.html">Map and Contact</a></li>
+        <li><a href="brief.html" class="action_btn">Next Page</a></li>
+    </div>
+    </header>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/1Magellan'sMarker.png">
+            <h1>Magellan's Marker</h1>
+            <p>
+                Located in Lapu-Lapu City, Mactan Island, Cebu province, the Magellan Shrine or Magellan Marker 
+                is a memorial tower that honors the Portuguese explorer Ferdinand Magellan. The site is believed 
+                to be where Magellan was killed during the Battle of Mactan in April 27, 1521.
+            </p>
+            <a href="https://guidetothephilippines.ph/destinations-and-attractions/magellan-s-shrine#:~:text=Located%20in%20Lapu%2DLapu%20City,Mactan%20in%20April%2027%2C%201521."
+                class="card-button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="images/3sanVicenteMarineSanctuary.jpg">
+            <h1>San Vicente Marine Sanctuary</h1>
+            <p>
+                San Vicente Marine Sanctuary, a brief boat ride from Mactan, rests within the Olango group, fostering a
+                rich marine ecosystem. Visitors encounter diverse marine life, mangroves, and serene seas, offering
+                immersive nature experiences.
+            </p>
+            <a href="https://www.tripadvisor.com/Attraction_Review-g298461-d6845015-Reviews-or20-San_Vicente_Marine_Sanctuary-Lapu_Lapu_Mactan_Island_Cebu_Island_Visayas.html"
+                class="card-button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="images/FortSanPedro.jpg">
+            <h1>Fort San Pedro</h1>
+            <p>
+
+                Fort San Pedro is said to be the oldest and the smallest fort in the Philippines, covering an area of 2,025 
+                square meters. Its walls are 20 feet tall and 8 feet thick, forming a triangle with uneven lengths: two sides 
+                face the sea and the other the land, where the current entrance gate to the fort is located.
+            </p>
+            <a href="https://www.thepoortraveler.net/2012/07/fort-san-pedro-cebu-city/#:~:text=Fort%20San%20Pedro%20is%20said,to%20the%20fort%20is%20located."
+                class="card-button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="images/5KawasanFalls (1).jpg">
+            <h1>Kawasan Falls</h1>
+            <p>
+                The Kawasan Falls is a three-stage cascade of clear turquoise water from mountain springs located in 
+                the jungles of the Cebu island. The falls are part of the Kawasan River in Badian, Cebu, in the Philippines.
+
+
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Kawasan_Falls#:~:text=The%20Kawasan%20Falls%20is%20a,%2C%20Cebu%2C%20in%20the%20Philippines."
+                class="card-button">Read More</a>
+        </div>
+        <div class="card">
+            <img src="images/6MuseoSugbo.jpg">
+            <h1>Museo Sugbo</h1>
+            <p>
+                Museo Sugbo is a museum in Cebu City, Philippines. The museum is located in the former Cebu Provincial 
+                Detention and Rehabilitation Center jail, and is located four blocks away from Plaza Independencia. 
+                The museum is owned by the Cebu provincial government.
+
+
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Museo_Sugbo"
+                class="card-button">Read More</a>
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <div class="footer">
+        <p style="font-weight: bold;">© 2024 - 2025 ITP4 | All Right Reserved</p>
+    </div>
+
+</body>
+
+</html>

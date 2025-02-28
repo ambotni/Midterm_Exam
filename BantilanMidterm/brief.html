@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Brief</title>
+</head>
+
+<body>
+    <header>
+        <div class="nvbar">
+            <div class="logo">
+                <br>
+                <img src="images/Lapul.png">
+            </div>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="spots.html">Attractions</a></li>
+                <li><a href="brief.html" class="home-link">Brief History</a></li>
+                <li><a href="contactAndMap.html">Map and Contact</a></li>
+            </ul>
+            <a href="contactAndMap.html" class="action_btn">Next Page</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="spots.html">Attractions</a></li>
+            <li><a href="brief.html" class="home-link">Brief History</a></li>
+            <li><a href="contactAndMap.html">Map and Contact</a></li>
+            <li><a href="contactAndMap.html" class="action_btn">Next Page</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <br>
+            <h1>Brief History</h1>
+            <br>
+            <p> 
+                Lapu-Lapu was a native chieftain of Mactan who defeated the Spanish in the 1521 Battle of Mactan. 
+                He is considered the first national hero of the Philippines. Born around 1491 in Mactan, Cebu and also
+                died in 1542 in Mactan, Cebu. He was a Muslim and a representative of the Sultan of Sulu,
+                the earliest known indigenous Visayan Muslim chieftain in Mactan.
+            </p>
+            <br>
+            <p>
+                Lapu-Lapu was formerly a municipality called Opon, established by Augustinian friars in 1730. 
+                It was renamed in 1961 through Republic Act 3134, also known as the City Charter of Lapu-Lapu. 
+                The city chose to honor a Filipino chieftain of Mactan Island, whose troops defeated the 
+                Spaniards led by Ferdinand Magellan in 1521. The site of the Battle of Mactan in 1521 is located 
+                in the city, declared a national shrine in 1973. Today, the people of Lapu-Lapu refer to themselves 
+                as “Oponganons,” as an homage to their original name. 
+            </p>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <div class="footer">
+        <p style="font-weight: bold;">© 2024 - 2025 ITP4 | All Right Reserved</p>
+    </div>
+</body>
+
+</html>
